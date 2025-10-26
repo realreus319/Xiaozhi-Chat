@@ -171,6 +171,7 @@ fun ChatScreen(
                 .padding(top = statusBarHeight), // 为状态栏留出空间
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+            Text(deviceState.name)
             // 头部状态区域
             Card(
                 modifier = Modifier

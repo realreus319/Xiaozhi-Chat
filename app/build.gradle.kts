@@ -13,7 +13,7 @@ android {
 
     defaultConfig {
         applicationId = "info.dourok.voicebot"
-        minSdk = 24
+        minSdk = 26
         //noinspection OldTargetApi
         targetSdk = 35
         versionCode = 20250616

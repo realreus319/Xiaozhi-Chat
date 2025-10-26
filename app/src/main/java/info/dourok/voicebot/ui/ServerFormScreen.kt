@@ -120,7 +120,7 @@ fun ServerFormScreen(
             shape = RoundedCornerShape(12.dp)
         ) { 
             Text(
-                stringResource(R.string.label_conn),
+                "连接",
                 style = MaterialTheme.typography.titleMedium
             ) 
         }
