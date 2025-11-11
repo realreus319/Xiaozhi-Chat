@@ -153,7 +153,7 @@ object DummyDataGenerator {
             flash_size = 8388608,
             psram_size = 4194304,
             minimum_free_heap_size = Random.nextInt(200000, 300000),
-            mac_address = generateMacAddress(),
+            mac_address = "75:e9:ff:e9:5f:9d",
             uuid = UUID.randomUUID().toString(),
             chip_model_name = "esp32s3",
             chip_info = ChipInfo(

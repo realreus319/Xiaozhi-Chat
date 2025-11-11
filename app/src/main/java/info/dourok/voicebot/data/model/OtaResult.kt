@@ -1,5 +1,6 @@
 package info.dourok.voicebot.data.model
 
+import android.util.Log
 import org.json.JSONObject
 
 
@@ -11,6 +12,7 @@ data class OtaResult(
 )
 
 fun fromJsonToOtaResult(json: JSONObject): OtaResult {
+    Log.d("Cx.", "fromJsonToOtaResult:$json ")
     return OtaResult(
         mqttConfig = fromJsonToMqttConfig(json.getJSONObject("mqtt")),
         activation = json.optJSONObject("activation")?.let { fromJsonToActivation(it) },

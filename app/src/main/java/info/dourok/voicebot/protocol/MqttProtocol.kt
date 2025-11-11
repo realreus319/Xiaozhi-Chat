@@ -66,6 +66,7 @@ class MqttProtocol(
                     scope.launch {
                         val payload = String(message.payload)
                         val json = JSONObject(payload)
+                        Log.d(TAG, "messageArrived: $json")
                         when (json.optString("type")) {
                             "hello" -> parseServerHello(json)
                             "goodbye" -> {
